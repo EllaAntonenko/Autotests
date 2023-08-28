@@ -11,10 +11,10 @@ it('Logo', function(){
                         .type(user[5].password)
                
                         cy.get('[data-test="customer-continue-button"]').click()
-                    cy.wait(3000)
-                    
-                        cy.get('.customerView').should(($p)=>{
-                            expect($p).to.contain(user[5].email)
-                                })
+                        cy.wait(4000)
+                        cy.get('form-field').find('[name="billingSameAsShipping"]').check({force: true})
+
+
+                       
                     })
                 })

@@ -17,4 +17,8 @@ it('Logo', function(){
                             expect($p).to.contain(user[5].email)
                                 })
                     })
+                    cy.get('#checkout-shipping-continue').click()
+                    cy.get('.checkout-view-header').should(($p)=>{
+                        expect($p).to.contain('Sara Taylor')
+                            })
                 })
