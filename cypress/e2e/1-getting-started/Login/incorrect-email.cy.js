@@ -1,6 +1,6 @@
 // Check the error message is displayed after entering the incorrect email and correct password
 
-it('Login with correct data', function() { 
+it('Login with incorrect email and correct password', function() { 
     cy.visit('https://underwoodammo.com/login.php')        
         cy.fixture('credentials.json').then((user) => {
             cy.get('#login_email')

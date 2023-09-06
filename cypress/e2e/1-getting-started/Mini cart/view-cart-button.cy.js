@@ -5,7 +5,7 @@
 //  4. Click the 'View cart' button
 //  5. Check the Shopping cart page is displayed
 
-it('Logo', function(){
+it('View Cart button proceeds to Shopping Cart page', function(){
     cy.visit('https://underwoodammo.com/ammo/')
     cy.contains('Add').click()
     cy.go('back')

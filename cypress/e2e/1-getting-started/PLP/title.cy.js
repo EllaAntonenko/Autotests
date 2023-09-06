@@ -1,5 +1,6 @@
+// The PLP title is displayed and has a corresponding info
 
-it('Pop-up', function(){
+it('Page title', function(){
     cy.visit('https://underwoodammo.com/')
        
     cy.get('.navPages').contains('Shop').click({force: true})

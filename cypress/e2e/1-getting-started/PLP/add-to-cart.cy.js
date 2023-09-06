@@ -1,7 +1,8 @@
+// The product is added to the cart after clicking the Add button on PLP
 
-it('The added product is displayed', function(){
+it('The added product is displayed on Shopping Cart page', function(){
     cy.visit('https://underwoodammo.com/ammo/')
-            cy.get('.card-title').eq(1).then(($title)=>{
+            cy.get('.card-title').eq(0).then(($title)=>{
                 var name = $title.text().trim().substring(1)
                 cy.contains('Add').click()
             cy.get('.cart-item-name').then(($title2)=>{

@@ -1,4 +1,6 @@
-it('Pop-up', function(){
+// Error message is displayed after entering incorrect email 
+
+it('Incorrect email', function(){
     cy.visit('https://underwoodammo.com/')
     cy.contains('SEND MY DISCOUNT CODE NOW!', {timeout : 30000}).click()
     cy.get('#email_63648991').type('qatest@yopmail')

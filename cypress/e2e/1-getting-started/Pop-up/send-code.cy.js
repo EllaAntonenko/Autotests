@@ -1,6 +1,6 @@
-// CHECK THE LOGO IS CLICKIBLE AND PROCEEDS TO THE HOMEPAGE
+// Success message is displayed after entering a valid email
 
-it('Pop-up', function(){
+it('Success message', function(){
     cy.visit('https://underwoodammo.com/')
     cy.contains('SEND MY DISCOUNT CODE NOW!', {timeout : 30000}).click()
     cy.get('#email_63648991').type('qatest@yopmail.com')

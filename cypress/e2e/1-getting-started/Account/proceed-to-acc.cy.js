@@ -1,5 +1,6 @@
+// Check the My Account icon on navigation proceeds to the My Account page after clicking (the user is logged in)
 
-it('Login with correct data', function() { 
+it('My Account icon proceeds to My Account page', function() { 
     cy.visit('https://underwoodammo.com/login.php')        
         cy.fixture('credentials.json').then((user) => {
             cy.get('#login_email')

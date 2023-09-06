@@ -1,4 +1,7 @@
-it('Login with correct data', function() { 
+// Check the Wish list is created after --> clicking New Wishlist button 
+// --> entering a wish list name --> and clicking a Create Wish List button
+
+it('Create Wish List', function() { 
     cy.visit('https://underwoodammo.com/login.php')        
         cy.fixture('credentials.json').then((user) => {
             cy.get('#login_email')

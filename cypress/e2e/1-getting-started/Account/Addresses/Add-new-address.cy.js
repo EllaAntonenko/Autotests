@@ -1,4 +1,7 @@
-it('Login with correct data', function() { 
+// Check the new address is added to the list of addresses after entering valid data into all required fields 
+//  and clicking 'Save Address' button
+
+it('Add a new address', function() { 
     cy.visit('https://underwoodammo.com/login.php')        
         cy.fixture('credentials.json').then((user) => {
             cy.get('#login_email')

@@ -1,7 +1,7 @@
-// Add to wishlist when the user is not logged in
-//the log in page should be displayed
+// Login page is displayed after clicking Wish list icon and choosing the Create A new Wish List option 
+// on PDP when the user is not logged in
 
-it('The added product is displayed', function(){
+it('Create a New Wish List', function(){
     cy.visit('https://underwoodammo.com/ammo/')
         cy.get('.card-title').eq(1).click()
         cy.get('#icon-Heart-Outlined').click({force: true})

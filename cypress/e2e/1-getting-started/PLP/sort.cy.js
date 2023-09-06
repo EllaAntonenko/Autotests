@@ -1,4 +1,4 @@
-it('The added product is displayed', function(){
+it('Sort', function(){
     cy.visit('https://underwoodammo.com/ammo/')
     cy.get('select').select('Price: Ascending')
          cy.wait(3000)

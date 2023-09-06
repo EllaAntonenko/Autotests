@@ -1,6 +1,4 @@
-// CHECK THE ADDED PRODUCT IS DISPLAYED IN THE SHOPPING CART
-//  1. Add the product to the cart--> the Shopping cart page is displayed
-//  2. Check one product is displayed in the cart
+// The product is deleted from the shopping cart after clicking the Remove icon on Shopping cart page
 
 it('The added product is displayed', function(){
     cy.visit('https://underwoodammo.com/ammo/')

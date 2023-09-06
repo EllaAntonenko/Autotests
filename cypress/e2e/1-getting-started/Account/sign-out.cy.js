@@ -1,6 +1,6 @@
-// Check the My Account page is displayed after entering the correct data
+// Check the user is signed out after clicking the Sign Out link on My Account page 
 
-it('Login with correct data', function() { 
+it('Sign Out', function() { 
     cy.visit('https://underwoodammo.com/login.php')        
         cy.fixture('credentials.json').then((user) => {
             cy.get('#login_email')

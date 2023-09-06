@@ -1,7 +1,6 @@
-// Add to wishlist when the user is not logged in
-//the log in page should be displayed
+// Check the product is displayed in the Shopping cart after clicking the Add button on Wishlist page
 
-it('Login with correct data', function() { 
+it('Add ot cart from the wish list', function() { 
     cy.visit('https://underwoodammo.com/login.php')        
         cy.fixture('credentials.json').then((user) => {
             cy.get('#login_email')

@@ -1,9 +1,6 @@
+// Check the product is added to the cart after clicking the Add to Cart button on PDP
 
-        // CHECK THE ADDED PRODUCT IS DISPLAYED IN THE SHOPPING CART
-//  1. Add the product to the cart--> the Shopping cart page is displayed
-//  2. Check one product is displayed in the cart
-
-it('The added product is displayed', function(){
+it('Add to Cart button on PDP', function(){
     cy.visit('https://underwoodammo.com/ammo/')
         cy.get('.card-title').eq(1).click()
         cy.contains('Add to Cart').click()

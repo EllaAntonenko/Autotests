@@ -1,4 +1,6 @@
-it('Login with correct data', function() { 
+// All wish lists are deleted after clicking the Delete All button on Wish List page
+
+it('Delete all wishlists', function() { 
     cy.visit('https://underwoodammo.com/login.php')        
         cy.fixture('credentials.json').then((user) => {
             cy.get('#login_email')

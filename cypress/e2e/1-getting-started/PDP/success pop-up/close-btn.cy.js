@@ -1,8 +1,7 @@
-      // CHECK THE ADDED PRODUCT IS DISPLAYED IN THE SHOPPING CART
-//  1. Add the product to the cart--> the Shopping cart page is displayed
-//  2. Check one product is displayed in the cart
+// Check the Success pop-up is closed after clicking the Close icon
 
-it('The added product is displayed', function(){
+
+it('Close icon on success pop-up', function(){
     cy.visit('https://underwoodammo.com/ammo/')
     cy.get('.card-title').eq(1).then(($title)=>{
         var name = $title.text().trim()

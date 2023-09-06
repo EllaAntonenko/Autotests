@@ -1,4 +1,6 @@
-it('Login with correct data', function() { 
+// PDP is displayed after clicking the product title on Wish list page
+
+it('Product name proceeds to PDP', function() { 
     cy.visit('https://underwoodammo.com/login.php')        
         cy.fixture('credentials.json').then((user) => {
             cy.get('#login_email')

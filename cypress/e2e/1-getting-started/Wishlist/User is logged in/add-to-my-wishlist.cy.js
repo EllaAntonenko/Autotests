@@ -1,7 +1,6 @@
-// Add to wishlist when the user is not logged in
-//the log in page should be displayed
+// The product is displayed on Wish list page after logging in and clicking the Wish List icon on PDP
 
-it('Login with correct data', function() { 
+it('Add to Wish list', function() { 
     cy.visit('https://underwoodammo.com/login.php')        
         cy.fixture('credentials.json').then((user) => {
             cy.get('#login_email')

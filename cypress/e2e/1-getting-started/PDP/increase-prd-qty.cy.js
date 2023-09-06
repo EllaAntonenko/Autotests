@@ -1,7 +1,6 @@
+// Check the product quantity is increased after clicking the Plus icon
 
-
-
-it('The added product is displayed', function(){
+it('Plus icon (Increase qty) on PDP', function(){
     cy.visit('https://underwoodammo.com/ammo/')
         cy.get('.card-title').eq(1).click()
         cy.get('[data-action="inc"]').dblclick()

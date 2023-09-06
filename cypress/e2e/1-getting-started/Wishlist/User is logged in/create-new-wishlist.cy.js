@@ -1,7 +1,7 @@
-// Add to wishlist when the user is not logged in
-//the log in page should be displayed
+// New wish list is created after --> choosing 'Create a New Wish List' option from the dropdown --> entering a Wish List name
+// --> and clicking the Create New Wish List button
 
-it('Login with correct data', function() { 
+it('Create Wish List', function() { 
     cy.visit('https://underwoodammo.com/login.php')        
         cy.fixture('credentials.json').then((user) => {
             cy.get('#login_email')

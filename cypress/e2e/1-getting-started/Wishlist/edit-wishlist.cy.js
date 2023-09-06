@@ -1,4 +1,7 @@
-it('Login with correct data', function() { 
+// New Wish list name is displayed after clicking the Edit button --> entering a new wish list name
+// --> and clicking the Save button
+
+it('Edit a wish list name', function() { 
     cy.visit('https://underwoodammo.com/login.php')        
         cy.fixture('credentials.json').then((user) => {
             cy.get('#login_email')

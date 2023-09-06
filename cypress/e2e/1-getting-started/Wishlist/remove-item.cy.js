@@ -1,4 +1,6 @@
-it('The added product is displayed', function(){
+// The product is removed from the wish list after clicking the Remove Item link on Wish list page
+
+it('Remove item from the Wish list page', function(){
     cy.visit('https://underwoodammo.com/ammo/')
         cy.get('.card-title').eq(1).click()
         cy.get('#icon-Heart-Outlined').click({force: true})

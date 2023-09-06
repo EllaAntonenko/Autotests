@@ -1,9 +1,6 @@
+// PDP is displayed after clicking the product name on PLP
 
-        // CHECK THE ADDED PRODUCT IS DISPLAYED IN THE SHOPPING CART
-//  1. Add the product to the cart--> the Shopping cart page is displayed
-//  2. Check one product is displayed in the cart
-
-it('The added product is displayed', function(){
+it('Product name', function(){
     cy.visit('https://underwoodammo.com/ammo/')
         cy.get('.card-title').eq(1).then(($title)=>{
             var name = $title.text().trim().substring(1)

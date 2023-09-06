@@ -1,6 +1,6 @@
 // Check the error message is displayed after leaving empty the required fields
 
-it('Login with correct data', function() { 
+it('Login with empty required fields', function() { 
     cy.visit('https://underwoodammo.com/login.php')        
         
         cy.get('.form-actions').within(() => {

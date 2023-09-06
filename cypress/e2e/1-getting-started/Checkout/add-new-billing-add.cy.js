@@ -19,6 +19,7 @@ it('Logo', function(){
                                     cy.get('.checkout-view-header').eq(2).within(() => {
                                     cy.contains('Edit').click()
                                         })
+                                        cy.get('#addressToggle').click()
                                         cy.contains('Enter a new address').click()
                                         cy.fixture('credentials.json').then((user) => {
                                             cy.get('#firstNameInput-label')

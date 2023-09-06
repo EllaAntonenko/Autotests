@@ -1,4 +1,6 @@
-it('Login with correct data', function() { 
+// Check the address is deleted after clicking the 'Delete' button on My Address page
+
+it('Delete Address', function() { 
     cy.visit('https://underwoodammo.com/login.php')        
         cy.fixture('credentials.json').then((user) => {
             cy.get('#login_email')

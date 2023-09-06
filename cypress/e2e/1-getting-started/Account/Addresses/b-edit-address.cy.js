@@ -1,4 +1,6 @@
-it('Login with correct data', function() { 
+// Check the information is edited and saved after changing and clicking the 'Save Address' button on Edit Address page
+
+it('Edit Address', function() { 
     cy.visit('https://underwoodammo.com/login.php')        
         cy.fixture('credentials.json').then((user) => {
             cy.get('#login_email')

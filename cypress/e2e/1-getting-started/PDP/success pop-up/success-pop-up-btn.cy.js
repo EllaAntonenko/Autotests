@@ -1,8 +1,6 @@
-      // CHECK THE ADDED PRODUCT IS DISPLAYED IN THE SHOPPING CART
-//  1. Add the product to the cart--> the Shopping cart page is displayed
-//  2. Check one product is displayed in the cart
+// Checkout page is displayed after clicking the Proceed to checkout link on success pop-up
 
-it('The added product is displayed', function(){
+it('Proceed to checkout link', function(){
     cy.visit('https://underwoodammo.com/ammo/')
     cy.get('.card-title').eq(1).then(($title)=>{
         var name = $title.text().trim()

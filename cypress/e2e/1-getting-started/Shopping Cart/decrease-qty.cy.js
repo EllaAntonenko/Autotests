@@ -1,8 +1,6 @@
-// CHECK THE ADDED PRODUCT IS DISPLAYED IN THE SHOPPING CART
-//  1. Add the product to the cart--> the Shopping cart page is displayed
-//  2. Check one product is displayed in the cart
+// Product qty is decreased after clicking the Minus icon 
 
-it('The added product is displayed', function(){
+it('Decrease Quantity', function(){
     cy.visit('https://underwoodammo.com/ammo/')
     cy.contains('Add').click()
     cy.go('back')
